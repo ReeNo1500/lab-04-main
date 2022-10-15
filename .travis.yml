@@ -1,5 +1,7 @@
 # this is a java project using maven
 language: java
+before_install:
+  - chmod +x mvnw
 # install
 install:
 - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
