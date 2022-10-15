@@ -1,5 +1,5 @@
-language: ruby
-rvm:
- - 2.2
- - jruby
- 
+language: java
+
+script: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+script: mvn test -B
